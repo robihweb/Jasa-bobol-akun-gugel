@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jasa hack akun gugel</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+    }
+
+    header {
+        background: #1e293b;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .product {
+        background: #1e293b;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .product h2 {
+        margin: 0;
+        color: #38bdf8;
+    }
+
+    .price {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #22c55e;
+    }
+
+    button {
+        padding: 10px 15px;
+        border: none;
+        background: #38bdf8;
+        color: black;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #0ea5e9;
+    }
+
+    .payment {
+        margin-top: 30px;
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .payment h2 {
+        color: #facc15;
+    }
+
+    .qr {
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+        background: #1e293b;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    🔥 PRODUK TERSEDIA 🔥
+</header>
+
+<div class="container">
+
+    <!-- PRODUK -->
+    <div class="product">
+        <h2>LINK SAKTI + TUTOR</h2>
+        <div class="price">Rp 50.000</div>
+        <button onclick="order('LINK SAKTI + TUTOR')">Beli</button>
+    </div>
+
+    <div class="product">
+        <h2>JASA BOBOL</h2>
+        <div class="price">Rp 50.000</div>
+        <button onclick="order('JASA BOBOL')">Beli</button>
+    </div>
+
+    <div class="product">
+        <h2>JOIN PARTNER</h2>
+        <div class="price">Rp 60.000</div>
+        <button onclick="order('JOIN PARTNER')">Beli</button>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="payment">
+        <h2>💳 METODE PEMBAYARAN</h2>
+
+        <p><b>QRIS:</b></p>
+        <!-- GANTI DENGAN GAMBAR QRIS KAMU -->
+        <img src="qris.jpg" class="qr">
+
+        <p><b>DANA:</b> 088973162157</p>
+        <p><b> ATAS NAMA:</b> RIKA RAHIM</p>
+    </div>
+
+</div>
+
+<footer>
+    © raja.coding
+</footer>
+
+<script>
+function order(product) {
+    let nomor = "6285188952223"; // GANTI NOMOR WA KAMU
+    let pesan = "Halo, saya mau beli " + product;
+    let url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
